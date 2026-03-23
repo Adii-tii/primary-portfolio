@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import DesignShowcase from './DesignShowcase';
 import Training from './Training';
-import img from "../assets/profile.JPG";
+import img from "../assets/profile.jpg";
 import WhatIBring from './WhatIBring';
 
 /* ─── Draggable Pill ─── */
