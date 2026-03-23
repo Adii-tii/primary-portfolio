@@ -3,39 +3,27 @@ import React from 'react';
 const Certificates = () => {
   const certificates = [
     {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
+      title: "Full-stack Development with MERN Stack",
+      issuer: "Cipher Schools",
+      date: "May’ 25",
       link: "#"
     },
     {
-      title: "Meta Front-End Developer Certificate",
-      issuer: "Coursera",
-      date: "2023",
+      title: "Affective Computing",
+      issuer: "IIIT Delhi, NPTEL",
+      date: "Apr’ 25",
       link: "#"
     },
     {
-      title: "Machine Learning Specialization",
-      issuer: "Stanford / Coursera",
-      date: "2022",
+      title: "Data Analysis with Python",
+      issuer: "IBM, Coursera",
+      date: "Feb’ 25",
       link: "#"
     },
     {
-      title: "Google Data Analytics Professional",
-      issuer: "Google / Coursera",
-      date: "2023",
-      link: "#"
-    },
-    {
-      title: "Advanced React & Redux",
-      issuer: "Udemy",
-      date: "2024",
-      link: "#"
-    },
-    {
-      title: "Neural Networks & Deep Learning",
-      issuer: "DeepLearning.AI",
-      date: "2023",
+      title: "Data Structures and Algorithms",
+      issuer: "iamneo",
+      date: "Sep’ 24",
       link: "#"
     }
   ];
@@ -76,10 +64,10 @@ const Certificates = () => {
             <div className="absolute inset-0 translate-x-3 translate-y-3 bg-text-primary rounded-[2rem]" />
 
             {/* CARD */}
-            <div className="relative flex-1 flex flex-col bg-bg-secondary border-2 border-text-primary rounded-[2rem] p-8 transition-all duration-500 group-hover:-translate-y-3 h-full">
+            <div className="relative flex-1 flex flex-col bg-bg-secondary border-2 border-text-primary rounded-[2rem] p-6 transition-all duration-500 group-hover:-translate-y-3 h-full">
 
               {/* TOP */}
-              <div className="mb-8 flex-1">
+              <div className="mb-4 flex-1">
 
                 {/* DATE BADGE */}
                 <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold border-2 border-text-primary bg-bg-primary shadow-[2px_2px_0px_var(--color-text-primary)] group-hover:bg-accent transition-all duration-300">
@@ -96,9 +84,6 @@ const Certificates = () => {
                   {cert.issuer}
                 </p>
               </div>
-
-              {/* DIVIDER */}
-              <div className="h-[2px] w-full bg-text-primary/20 mb-6 group-hover:bg-text-primary transition-all duration-300" />
 
               {/* CTA */}
               <div className="flex justify-between items-center mt-auto">

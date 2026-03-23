@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import myImage from "../assets/my-notion-face-transparent.png";
 
-const Navbar = ({ theme, toggleTheme }) => {
+const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -51,10 +51,6 @@ const Navbar = ({ theme, toggleTheme }) => {
             About Me
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full"></span>
           </a>
-          <a href="#hobbies" onClick={(e) => handleNavClick(e, "#hobbies")} className="hover:text-text-primary transition-colors relative group">
-            Life
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full"></span>
-          </a>
         </div>
         
         {/* Mobile Nav Links - Compact */}
@@ -71,7 +67,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           <a href="/resume" className="hidden sm:flex px-4 py-2 border-2 border-[#1E1E1E] rounded-xl text-sm font-bold text-[#1E1E1E] hover:bg-[#1E1E1E] hover:text-[#FFFFEB] transition-colors">
             Resume
           </a>
-          <a href="#contact" onClick={(e) => handleNavClick(e, "#contact")} className="px-5 py-2 bg-accent rounded-xl border-2 border-[#1E1E1E] text-sm font-bold text-text-primary shadow-[2px_2px_0px_#1E1E1E] hover:translate-y-0.5 hover:translate-x-0.5 hover:shadow-[0px_0px_0px_#1E1E1E] transition-all">
+          <a href="/contact" onClick={(e) => { e.preventDefault(); navigate('/contact'); window.scrollTo(0,0); }} className="px-5 py-2 bg-accent rounded-xl border-2 border-[#1E1E1E] text-sm font-bold text-text-primary shadow-[2px_2px_0px_#1E1E1E] hover:translate-y-0.5 hover:translate-x-0.5 hover:shadow-[0px_0px_0px_#1E1E1E] transition-all">
             Hire Me
           </a>
         </div>

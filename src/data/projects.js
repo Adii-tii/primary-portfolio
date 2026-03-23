@@ -50,6 +50,8 @@ export const projectsData = [
   tags: ["React", "JavaScript", "UI/UX"],
   roles: ["Frontend Developer", "Designer"],
   timeline: "Jan 2026",
+  github: "https://github.com/Adii-tii/ayurvarta",
+  live: "https://ayurvarta-demo.vercel.app",
   ...getProjectImages("ayurvarta"),
 },
 
@@ -83,6 +85,8 @@ export const projectsData = [
   tags: ["React", "State Management", "Data Visualization"],
   roles: ["Full Stack Developer"],
   timeline: "Nov 2025",
+  github: "https://github.com/Adii-tii/expense-tracker",
+  live: "https://expense-tracker-modern.vercel.app",
   ...getProjectImages("expense-tracker"),
 },
 
@@ -116,6 +120,8 @@ export const projectsData = [
   tags: ["Tailwind", "Design", "E-commerce"],
   roles: ["UI Developer"],
   timeline: "Oct 2025",
+  github: "https://github.com/Adii-tii/jewelry-catalog",
+  live: "https://premium-catalog.netlify.app",
   ...getProjectImages("jewlery-catalog"),
 },
   {
@@ -147,6 +153,8 @@ export const projectsData = [
     tags: ["Productivity", "APIs", "Node.js"],
     roles: ["Backend Developer"],
     timeline: "Aug 2025",
+    github: "https://github.com/Adii-tii/loopin-productivity",
+    live: "https://loopin-sync.vercel.app",
     ...getProjectImages("loopin"),
   },
 
@@ -179,6 +187,8 @@ export const projectsData = [
     tags: ["D3.js", "GitHub API", "Data"],
     roles: ["Software Engineer"],
     timeline: "Jul 2025",
+    github: "https://github.com/Adii-tii/pr-velocity-tracker",
+    live: "https://pr-tracker-insights.vercel.app",
     ...getProjectImages("pr-tracker"),
   },
 
@@ -211,6 +221,8 @@ export const projectsData = [
     tags: ["Computer Vision", "AI", "Python"],
     roles: ["Machine Learning Engineer"],
     timeline: "Mar 2025",
+    github: "https://github.com/Adii-tii/sign-language-ai",
+    live: "https://gesture-vision.vercel.app",
     ...getProjectImages("sign-lang"),
   }
 ];

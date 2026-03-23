@@ -104,20 +104,30 @@ const ProjectDetail = () => {
               </div>
             </div>
 
-            {/* Links Column */}
+            {/* Links Column - Enhanced Visibility */}
             <div className="pt-8 border-t-2 border-text-primary/10">
-              <span className="block text-[10px] font-black uppercase tracking-widest text-text-primary/40 mb-6">Links</span>
+              <span className="block text-[10px] font-black uppercase tracking-widest text-text-primary/40 mb-6">Project Access</span>
               <div className="flex flex-col gap-4">
                 {project.github && (
-                  <a href={project.github} target="_blank" rel="noreferrer" className="flex items-center justify-between p-5 bg-[#1E1E1E] text-[#FFFFEB] border-2 border-text-primary rounded-2xl shadow-[4px_4px_0px_#C8F7A6] hover:translate-y-[-2px] transition-all group">
-                    <span className="font-black uppercase tracking-widest text-xs">Repository</span>
-                    <svg className="w-5 h-5 rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+                  <a href={project.github} target="_blank" rel="noreferrer" className="flex items-center justify-between p-4 bg-[#1E1E1E] text-[#FFFFEB] border-2 border-text-primary rounded-2xl shadow-[6px_6px_0px_#C8F7A6] hover:translate-y-[-2px] transition-all group">
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-accent transition-colors">
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                      </div>
+                      <span className="font-serif italic font-black text-lg">Code Repository</span>
+                    </div>
+                    <svg className="w-5 h-5 opacity-40 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" /></svg>
                   </a>
                 )}
                 {project.live && (
-                  <a href={project.live} target="_blank" rel="noreferrer" className="flex items-center justify-between p-5 bg-[#C8F7A6] text-text-primary border-2 border-text-primary rounded-2xl shadow-[4px_4px_0px_#1E1E1E] hover:translate-y-[-2px] transition-all group">
-                    <span className="font-black uppercase tracking-widest text-xs">Live Site</span>
-                    <svg className="w-5 h-5 rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
+                  <a href={project.live} target="_blank" rel="noreferrer" className="flex items-center justify-between p-4 bg-[#C8F7A6] text-text-primary border-2 border-text-primary rounded-2xl shadow-[6px_6px_0px_#1E1E1E] hover:translate-y-[-2px] transition-all group">
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 bg-white/40 rounded-xl flex items-center justify-center group-hover:bg-[#1E1E1E] group-hover:text-[#FFFFEB] transition-all">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
+                      </div>
+                      <span className="font-serif italic font-black text-lg">Live Experience</span>
+                    </div>
+                    <svg className="w-5 h-5 opacity-40 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" /></svg>
                   </a>
                 )}
               </div>
@@ -137,30 +147,38 @@ const ProjectDetail = () => {
               </div>
             </section>
 
-            {/* Problem Statement */}
-            <section className="bg-[#1E1E1E] p-10 md:p-16 rounded-[2.5rem] text-[#FFFFEB] shadow-[10px_10px_0px_#ff6b57] border-2 border-text-primary">
-              <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#FFFFEB]/40 mb-8">02. The Problem</h3>
-              <p className="font-serif text-2xl md:text-3xl font-black italic tracking-tight leading-tight">
-                {project.problem || "Bridging technical constraints with high-level user expectations in a saturated market."}
-              </p>
+            {/* Problem Statement - Normal Text */}
+            <section className="scroll-mt-32">
+              <h3 className="text-xs font-black uppercase tracking-[0.4em] text-text-primary/30 mb-8 flex items-center gap-4">
+                02. The Problem <div className="h-px w-20 bg-text-primary/10"></div>
+              </h3>
+              <div className="font-medium text-lg md:text-xl text-text-primary/90 leading-relaxed italic max-w-2xl">
+                {project.problem || "Solving complex interaction patterns while maintaining a lightweight footprint."}
+              </div>
             </section>
 
-            {/* Solution Approach */}
-            <section className="bg-[#C8F7A6] p-10 md:p-16 rounded-[2.5rem] border-2 border-text-primary shadow-[10px_10px_0px_#1E1E1E]">
-              <h3 className="text-xs font-black uppercase tracking-[0.4em] text-text-primary/40 mb-8">03. The Solution</h3>
-              <p className="font-serif text-2xl md:text-3xl font-black italic tracking-tight leading-tight text-text-primary">
-                {project.approach || "A unified design system and state-driven architecture that prioritizes clarity and speed."}
-              </p>
+            {/* Solution Approach - Normal Text */}
+            <section className="scroll-mt-32">
+              <h3 className="text-xs font-black uppercase tracking-[0.4em] text-text-primary/30 mb-8 flex items-center gap-4">
+                03. The Solution <div className="h-px w-20 bg-text-primary/10"></div>
+              </h3>
+              <div className="font-medium text-lg md:text-xl text-text-primary/90 leading-relaxed italic max-w-2xl">
+                {project.approach || "A unified design system and robust state management architecture."}
+              </div>
             </section>
 
-            {/* Key Features */}
-            <section>
-              <h3 className="text-xs font-black uppercase tracking-[0.4em] text-text-primary/30 mb-12">04. Features</h3>
-              <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
+            {/* Core Features - Redesigned as Individual Blocks */}
+            <section className="scroll-mt-32">
+              <h3 className="text-xs font-black uppercase tracking-[0.4em] text-text-primary/30 mb-12 flex items-center gap-4">
+                04. Core Features <div className="h-px w-20 bg-text-primary/10"></div>
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                 {(project.features || []).map((feature, i) => (
-                  <div key={i} className="flex gap-5 items-start group">
-                    <span className="font-serif italic font-black text-4xl text-[#ff6b57]">/0{i+1}</span>
-                    <p className="font-bold text-lg text-text-primary pt-2 group-hover:translate-x-1 transition-transform">{feature}</p>
+                  <div key={i} className="group p-5 md:p-7 bg-[#C8F7A6] border-2 border-text-primary rounded-[1.5rem] shadow-[6px_6px_0px_#1E1E1E] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-300 flex flex-col justify-between min-h-[120px]">
+                    <span className="font-serif italic font-black text-2xl text-text-primary/20 mb-4">/0{i+1}</span>
+                    <p className="font-serif italic font-black text-base md:text-lg text-text-primary tracking-tight leading-tight">
+                      {feature}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -179,8 +197,8 @@ const ProjectDetail = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            {/* Main Primary View - Slightly Smaller */}
-            <div className="relative w-full md:w-[75%] aspect-[16/10] border-2 border-text-primary rounded-3xl overflow-hidden shadow-[12px_12px_0px_#1E1E1E] group">
+            {/* Main Primary View - Centered & Navigable */}
+            <div className="relative w-full md:w-[85%] aspect-[16/10] border-2 border-text-primary rounded-3xl overflow-hidden shadow-[12px_12px_0px_#1E1E1E] group">
                <img 
                 src={project.gallery[currentImageIndex]} 
                 alt="Main View" 
@@ -188,9 +206,9 @@ const ProjectDetail = () => {
               />
               
               {/* Navigation Arrows */}
-              <div className="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-4 pointer-events-none">
-                 <button onClick={() => setCurrentImageIndex(p => p === 0 ? project.gallery.length - 1 : p - 1)} className="w-12 h-12 bg-white border-2 border-text-primary rounded-full shadow-[2px_2px_0px_#1E1E1E] flex items-center justify-center font-black hover:bg-accent transition-all active:translate-y-0.5 pointer-events-auto">←</button>
-                 <button onClick={() => setCurrentImageIndex(p => (p + 1) % project.gallery.length)} className="w-12 h-12 bg-white border-2 border-text-primary rounded-full shadow-[2px_2px_0px_#1E1E1E] flex items-center justify-center font-black hover:bg-accent transition-all active:translate-y-0.5 pointer-events-auto">→</button>
+              <div className="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-6 pointer-events-none">
+                 <button onClick={() => setCurrentImageIndex(p => p === 0 ? project.gallery.length - 1 : p - 1)} className="w-14 h-14 bg-[#FFFFEB] border-2 border-text-primary rounded-full shadow-[3px_3px_0px_#1E1E1E] flex items-center justify-center font-black hover:bg-accent hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_#1E1E1E] transition-all active:translate-y-0.5 pointer-events-auto">←</button>
+                 <button onClick={() => setCurrentImageIndex(p => (p + 1) % project.gallery.length)} className="w-14 h-14 bg-[#FFFFEB] border-2 border-text-primary rounded-full shadow-[3px_3px_0px_#1E1E1E] flex items-center justify-center font-black hover:bg-accent hover:translate-x-[2px] hover:translate-y-[-2px] hover:shadow-[-5px_5px_0px_#1E1E1E] transition-all active:translate-y-0.5 pointer-events-auto">→</button>
               </div>
             </div>
             
@@ -200,8 +218,8 @@ const ProjectDetail = () => {
                 <button
                   key={i}
                   onClick={() => setCurrentImageIndex(i)}
-                  className={`relative w-32 aspect-video rounded-xl overflow-hidden border-2 transition-all duration-300 transform ${
-                    currentImageIndex === i ? 'border-accent scale-110 shadow-lg' : 'border-text-primary opacity-50 hover:opacity-100 hover:scale-105 shadow-sm'
+                  className={`relative w-28 md:w-36 aspect-video rounded-xl overflow-hidden border-2 transition-all duration-300 transform ${
+                    currentImageIndex === i ? 'border-accent scale-110 shadow-lg' : 'border-text-primary opacity-40 hover:opacity-100 hover:scale-105 shadow-sm'
                   }`}
                 >
                   <img src={img} alt={`Thumb ${i+1}`} className="w-full h-full object-cover" />
@@ -211,17 +229,6 @@ const ProjectDetail = () => {
           </div>
         </div>
       </section>
-
-      {/* ---------- MINIMALIST FOOTER ---------- */}
-      <footer className="py-40 px-6 bg-[#F0D7FF] text-center border-t-2 border-text-primary">
-        <Link to={`/project/${nextProjectIndex}`} className="group inline-block">
-          <p className="text-xs font-black uppercase tracking-[0.6em] text-text-primary/40 mb-10">UP NEXT</p>
-          <h2 className="font-serif text-[clamp(40px,8vw,120px)] italic font-black text-text-primary leading-none group-hover:scale-105 transition-transform duration-500 drop-shadow-sm">
-            {nextProject.title}
-          </h2>
-          <div className="mt-12 h-0.5 w-full bg-text-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
-        </Link>
-      </footer>
     </div>
   );
 };

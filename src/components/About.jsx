@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import DesignShowcase from './DesignShowcase';
 import Training from './Training';
-import img from "../assets/profile.jpg";
+import img from "../assets/profile.JPG";
+import WhatIBring from './WhatIBring';
 
 /* ─── Draggable Pill ─── */
 const DraggablePill = ({ children, initialClasses }) => {
@@ -217,65 +218,14 @@ const About = () => {
       {/* ═══════════════════════════════════════════
           PART 5 — What I Bring to the Table
           ═══════════════════════════════════════════ */}
-      <div className="py-24 relative flex flex-col items-center justify-center min-h-[700px] bg-bg-green shadow-xl px-4 overflow-hidden border border-[#1E1E1E]/10 rounded-t-[60px] pb-32">
-
-        {/* Code bracket floating element */}
-        <div className="absolute top-[15%] left-[8%] lg:left-[18%] bg-[#F0D7FF] px-4 py-6 rounded-lg border-2 border-[#1E1E1E] rotate-[-12deg] shadow-[4px_4px_0px_#1E1E1E] z-0 hidden md:block">
-          <span className="font-mono text-[#1E1E1E] font-bold text-lg tracking-tighter">&lt;/&gt;</span>
-        </div>
-
-        {/* Browser window mockup */}
-        <div className="absolute top-[12%] right-[5%] lg:right-[15%] bg-[#FFFFEB] w-48 h-[120px] rounded-xl border-2 border-[#1E1E1E] shadow-[6px_6px_0px_#1E1E1E] flex flex-col rotate-[6deg] z-0 hidden md:block">
-          <div className="h-6 w-full flex items-center px-3 gap-2 border-b-2 border-[#1E1E1E] bg-[#FFFFEB] rounded-t-xl">
-            <div className="w-2.5 h-2.5 rounded-full bg-[#ff6b57]" />
-            <div className="w-2.5 h-2.5 rounded-full bg-[#F0D7FF]" />
-          </div>
-          <div className="p-4 flex flex-col gap-2 relative h-full bg-[#1E1E1E] rounded-b-lg">
-            <div className="flex gap-2 mt-1">
-              {[...Array(6)].map((_, i) => <div key={i} className="w-2 h-2 rounded-full bg-[#FFFFEB]" />)}
-            </div>
-            <div className="flex gap-2">
-              {[...Array(3)].map((_, i) => <div key={i} className="w-2 h-2 rounded-full bg-[#FFFFEB]" />)}
-            </div>
-            <div className="w-12 h-1 bg-[#FFFFEB] mt-2" />
-          </div>
-          <svg className="absolute -bottom-8 -right-8 w-16 h-16 text-[#ff6b57] rotate-[-20deg] drop-shadow-lg z-20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M5.5 3L18.5 13L12.5 14L15.5 21L12.5 22L9.5 15L4.5 18V3Z" stroke="#FFFFEB" strokeWidth="1"/>
-          </svg>
-        </div>
-
-        {/* Large Title */}
-        <div className="text-center z-10">
-          <h2 className="font-serif text-[clamp(50px,9vw,100px)] leading-[1] text-[#FFFFEB] tracking-tight select-none">
-            What I bring<br />to the table.
-          </h2>
-        </div>
-
-        {/* Draggable skill pills — Desktop */}
-        <DraggablePill initialClasses="top-[10%] left-[45%] z-20 hidden xl:block">AI Systems Design</DraggablePill>
-        <DraggablePill initialClasses="bottom-[25%] right-[20%] z-20 hidden md:block">Backend Architecture</DraggablePill>
-        <DraggablePill initialClasses="top-[55%] left-[6%] z-20 hidden xl:block">Machine Learning Models</DraggablePill>
-        <DraggablePill initialClasses="bottom-[15%] left-[25%] z-20 hidden md:block">Scalable APIs</DraggablePill>
-        <DraggablePill initialClasses="top-[35%] right-[8%] z-20 hidden xl:block">System Design Thinking</DraggablePill>
-        <DraggablePill initialClasses="top-[75%] left-[15%] z-20 hidden md:block">React & Modern Web</DraggablePill>
-        <DraggablePill initialClasses="top-[60%] right-[4%] z-20 hidden md:block">Data Structures & Algorithms</DraggablePill>
-        <DraggablePill initialClasses="bottom-[10%] right-[35%] z-20 hidden xl:block">Experimentation & Prototyping</DraggablePill>
-
-        {/* Mobile pills */}
-        <div className="flex flex-wrap justify-center gap-2 mt-12 md:hidden z-10 w-full px-2">
-          {["AI Systems Design", "Backend Architecture", "Machine Learning", "Scalable APIs", "React & Web"].map((label, i) => (
-            <span key={i} className="px-3 py-1.5 bg-[#FFFFEB] text-[#034F46] rounded-md text-sm font-medium">
-              {label}
-            </span>
-          ))}
-        </div>
-
-      </div>
+      <WhatIBring />
 
       {/* ═══════════════════════════════════════════
-          PART 5 — Design Showcase
+          PART 6 — Design Showcase (Overlapping)
           ═══════════════════════════════════════════ */}
-      <DesignShowcase />
+      <div className="-mt-24 relative z-20">
+        <DesignShowcase />
+      </div>
 
     </section>
   );

@@ -57,7 +57,7 @@ const DraggableCard = ({ children, initialStyle, className, onDragStart }) => {
 
 const DesignShowcase = () => {
   return (
-    <section className="relative py-24 md:py-32 bg-bg-primary overflow-hidden">
+    <section className="relative py-24 md:py-32 bg-bg-primary rounded-[60px] overflow-hidden">
       {/* GRID BACKGROUND */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(circle,_#1E1E1E_1px,_transparent_1px)] bg-[size:28px_28px]" />

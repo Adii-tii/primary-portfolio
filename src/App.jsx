@@ -13,37 +13,13 @@ import Hobbies from './components/Hobbies'
 
 import Intro from './components/Intro'
 
+import WhatIBring from './components/WhatIBring'
+
 function App() {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme')
-      if (savedTheme) {
-        return savedTheme
-      }
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark'
-      }
-    }
-    return 'light'
-  })
-
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-    localStorage.setItem('theme', theme)
-  }, [theme])
-
-  const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'))
-  }
-
   return (
     <Router>
-      <div className="min-h-screen bg-bg-primary text-text-primary selection:bg-accent/30 selection:text-accent transition-colors duration-300 flex flex-col">
-        <Navbar theme={theme} toggleTheme={toggleTheme} />
+      <div className="min-h-screen bg-[#FFFFEB] text-[#1E1E1E] selection:bg-[#1E1E1E] selection:text-[#FFFFEB] transition-colors duration-300 flex flex-col">
+        <Navbar />
         <main className="flex-grow w-full">
           <Routes>
             <Route path="/" element={
@@ -53,13 +29,18 @@ function App() {
                 <Projects />
                 <TechStack />
                 <Certificates />
-                <Hobbies />
+                <WhatIBring />
                 <Contact />
               </>
             } />
             <Route path="/about" element={
               <div className="pt-24 min-h-screen bg-bg-primary">
                 <About />
+              </div>
+            } />
+            <Route path="/contact" element={
+              <div className="pt-24 min-h-screen bg-bg-primary">
+                <Contact />
               </div>
             } />
             <Route path="/projects/:id" element={<ProjectDetail />} />
