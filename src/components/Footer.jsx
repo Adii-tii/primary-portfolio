@@ -17,6 +17,8 @@ const Footer = () => {
             
             <h2 className="font-serif text-[clamp(35px,6vw,95px)] leading-[1] text-[#FFFFEB] font-black tracking-tighter max-w-5xl">
               I build for the <span className="italic text-accent underline decoration-[#FFFFEB] decoration-4 underline-offset-8">joy</span> of creation, and the challenge of <span className="italic opacity-70">intelligent</span> design.
+              <br></br>
+              <h6 className="text-[30px] font-black uppercase tracking-[0.5em] text-text-primary/30">thank you putu</h6>
             </h2>
             
             
