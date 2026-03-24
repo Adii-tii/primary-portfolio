@@ -1,81 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
-
-const MouseTrail = ({ containerRef }) => {
-  const [trails, setTrails] = useState([]);
-  const icons = ["✦", "✺", "✹", "✴", "✶", "✳"];
-  // Theme aware fallback colors
-  const colors = ["#ff6b57", "var(--color-accent)", "var(--color-text-primary)", "#F0D7FF"];
-
-  useEffect(() => {
-    if (!containerRef.current) return;
-    const container = containerRef.current;
-    
-    let timeoutId;
-    
-    const handleMouseMove = (e) => {
-      const rect = container.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      const newTrail = {
-        id: Date.now() + Math.random(),
-        x,
-        y,
-        icon: icons[Math.floor(Math.random() * icons.length)],
-        color: colors[Math.floor(Math.random() * colors.length)],
-        rotation: Math.floor(Math.random() * 360)
-      };
-
-      setTrails((prev) => [...prev, newTrail].slice(-15));
-      
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        setTrails([]);
-      }, 700);
-    };
-
-    container.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      container.removeEventListener('mousemove', handleMouseMove);
-      clearTimeout(timeoutId);
-    };
-  }, [containerRef]);
-
-  return (
-    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
-      {trails.map((trail) => (
-        <span
-          key={trail.id}
-          className="absolute font-serif font-bold drop-shadow-sm"
-          style={{
-            left: trail.x,
-            top: trail.y,
-            color: trail.color,
-            animation: 'trailFade 700ms forwards ease-out',
-            fontSize: '28px',
-            transform: `translate(-50%, -50%) rotate(${trail.rotation}deg)`
-          }}
-        >
-          {trail.icon}
-        </span>
-      ))}
-      <style>{`
-        @keyframes trailFade {
-          0% { opacity: 1; transform: translate(-50%, -50%) scale(1.5) rotate(0deg); }
-          100% { opacity: 0; transform: translate(-50%, -50%) scale(0.2) rotate(90deg); }
-        }
-      `}</style>
-    </div>
-  );
-};
+import React, { useRef } from "react";
 
 const Home = () => {
   const sectionRef = useRef(null);
 
   return (
     <section ref={sectionRef} id="home" className="min-h-screen relative overflow-hidden flex flex-col justify-center bg-bg-primary pt-20">
-      
-      <MouseTrail containerRef={sectionRef} />
       
       {/* Background Dots Pattern */}
       <div 

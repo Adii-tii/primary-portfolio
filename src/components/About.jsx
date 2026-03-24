@@ -3,6 +3,7 @@ import DesignShowcase from './DesignShowcase';
 import Training from './Training';
 import img from "../assets/profile.jpg";
 import WhatIBring from './WhatIBring';
+import Certificates from './Certificates';
 
 /* ─── Draggable Pill ─── */
 const DraggablePill = ({ children, initialClasses }) => {
@@ -65,7 +66,7 @@ const About = () => {
       {/* ═══════════════════════════════════════════
           PART 1 — Hero Introduction (editorial flow)
           ═══════════════════════════════════════════ */}
-      <div className="pt-32 pb-32 relative">
+      <div className="pt-24 pb-32 relative">
 
         {/* Subtle dot grid — same as Home */}
         <div
@@ -194,7 +195,7 @@ const About = () => {
                       Open to Work
                     </div>
                     <h4 className="font-serif text-3xl font-bold text-[#FFFFEB] mb-2 leading-tight drop-shadow-sm">
-                      Looking for<br/>Internships.
+                      Looking for<br />Internships.
                     </h4>
                     <p className="text-[#FFFFEB]/90 text-sm font-medium">
                       Actively seeking software engineering internships to solve hard problems and learn from great teams.
@@ -214,6 +215,7 @@ const About = () => {
           PART 4 — Training & Programs
           ═══════════════════════════════════════════ */}
       <Training />
+      <Certificates />
 
       {/* ═══════════════════════════════════════════
           PART 5 — What I Bring to the Table

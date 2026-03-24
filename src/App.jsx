@@ -28,18 +28,16 @@ function App() {
                 <Intro />
                 <Projects />
                 <TechStack />
-                <Certificates />
-                <WhatIBring />
                 <Contact />
               </>
             } />
             <Route path="/about" element={
-              <div className="pt-24 min-h-screen bg-bg-primary">
+              <div className="min-h-screen bg-bg-primary">
                 <About />
               </div>
             } />
             <Route path="/contact" element={
-              <div className="pt-24 min-h-screen bg-bg-primary">
+              <div className="min-h-screen bg-bg-primary">
                 <Contact />
               </div>
             } />

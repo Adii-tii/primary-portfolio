@@ -78,7 +78,7 @@ const DesignShowcase = () => {
 
         {/* Card 6 — 200x200 small square, top-left area */}
         <DraggableCard
-          initialStyle={{ left: "2%", top: "0%", transform: "rotate(-5deg)", zIndex: 8 }}
+          initialStyle={{ left: "15%", top: "8%", transform: "rotate(-12deg)", zIndex: 8 }}
         >
           <div className="w-[200px] h-[200px] rounded-2xl border-2 border-[#1E1E1E] overflow-hidden bg-[#FFFFEB]">
             <img src={img3} alt="Poster Art" className="w-full h-full object-cover" draggable={false} />
@@ -90,7 +90,7 @@ const DesignShowcase = () => {
 
         {/* Card 1 — 310x310 square, left side lower */}
         <DraggableCard
-          initialStyle={{ left: "0%", bottom: "2%", transform: "rotate(-8deg)", zIndex: 10 }}
+          initialStyle={{ left: "8%", bottom: "12%", transform: "rotate(-15deg)", zIndex: 10 }}
         >
           <div className="w-[310px] h-[310px] rounded-2xl border-2 border-[#1E1E1E] overflow-hidden bg-[#FFFFEB]">
             <img src={img1} alt="Visual Identity" className="w-full h-full object-cover" draggable={false} />
@@ -102,7 +102,7 @@ const DesignShowcase = () => {
 
         {/* Card 2 — 360x360 large, center-left */}
         <DraggableCard
-          initialStyle={{ left: "22%", bottom: "0%", transform: "rotate(-2deg)", zIndex: 20 }}
+          initialStyle={{ left: "32%", bottom: "4%", transform: "rotate(-5deg)", zIndex: 20 }}
         >
           <div className="w-[360px] h-[360px] rounded-2xl border-2 border-[#1E1E1E] overflow-hidden bg-[#FFFFEB]">
             <img src={imgBrochure} alt="Brochure Design" className="w-full h-full object-cover" draggable={false} />
@@ -114,7 +114,7 @@ const DesignShowcase = () => {
 
         {/* Card 3 — 300x220 landscape, center top area */}
         <DraggableCard
-          initialStyle={{ left: "38%", top: "8%", transform: "rotate(3deg)", zIndex: 25 }}
+          initialStyle={{ left: "48%", top: "12%", transform: "rotate(10deg)", zIndex: 25 }}
         >
           <div className="w-[300px] h-[220px] rounded-2xl border-2 border-[#1E1E1E] overflow-hidden bg-[#FFFFEB]">
             <img src={imgFrame} alt="UI Concept" className="w-full h-full object-cover" draggable={false} />
@@ -126,7 +126,7 @@ const DesignShowcase = () => {
 
         {/* Card 4 — 400x280 wide landscape, right half */}
         <DraggableCard
-          initialStyle={{ right: "0%", bottom: "5%", transform: "rotate(5deg)", zIndex: 18 }}
+          initialStyle={{ right: "12%", bottom: "18%", transform: "rotate(8deg)", zIndex: 18 }}
         >
           <div className="w-[400px] h-[280px] rounded-2xl border-2 border-[#1E1E1E] overflow-hidden bg-[#FFFFEB]">
             <img src={imgInsta2} alt="Social Media" className="w-full h-full object-cover" draggable={false} />
@@ -138,7 +138,7 @@ const DesignShowcase = () => {
 
         {/* Card 5 — 190x240 small portrait, top-right */}
         <DraggableCard
-          initialStyle={{ right: "3%", top: "0%", transform: "rotate(10deg)", zIndex: 12 }}
+          initialStyle={{ right: "18%", top: "10%", transform: "rotate(15deg)", zIndex: 12 }}
         >
           <div className="w-[190px] h-[240px] rounded-2xl border-2 border-[#1E1E1E] overflow-hidden bg-[#FFFFEB]">
             <img src={imgInsta3} alt="Creative Post" className="w-full h-full object-cover" draggable={false} />
@@ -150,7 +150,7 @@ const DesignShowcase = () => {
 
         {/* Card 7 — 220x280, mid-left floating */}
         <DraggableCard
-          initialStyle={{ left: "18%", top: "2%", transform: "rotate(4deg)", zIndex: 14 }}
+          initialStyle={{ left: "22%", top: "25%", transform: "rotate(7deg)", zIndex: 14 }}
         >
           <div className="w-[220px] h-[280px] rounded-2xl border-2 border-[#1E1E1E] overflow-hidden bg-[#FFFFEB]">
             <img src={imgGroup} alt="Layout Design" className="w-full h-full object-cover" draggable={false} />
@@ -162,7 +162,7 @@ const DesignShowcase = () => {
 
         {/* Card 8 — 250x180 landscape, right-center area */}
         <DraggableCard
-          initialStyle={{ right: "24%", top: "42%", transform: "rotate(-3deg)", zIndex: 15 }}
+          initialStyle={{ right: "35%", top: "45%", transform: "rotate(-8deg)", zIndex: 15 }}
         >
           <div className="w-[250px] h-[180px] rounded-2xl border-2 border-[#1E1E1E] overflow-hidden bg-[#FFFFEB]">
             <img src={imgInsta32} alt="Brand Design" className="w-full h-full object-cover" draggable={false} />

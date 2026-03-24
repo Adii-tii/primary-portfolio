@@ -224,5 +224,38 @@ export const projectsData = [
     github: "https://github.com/Adii-tii/sign-language-ai",
     live: "https://gesture-vision.vercel.app",
     ...getProjectImages("sign-lang"),
+  },
+  {
+    title: "Bankruptcy Prediction",
+    folder: "bankruptcy-prediction",
+    description: "A machine learning model to predict the likelihood of a company's financial failure.",
+    fullDetails:
+      "A high-precision machine learning system designed to analyze financial indicators and predict corporate bankruptcy. The model leverages economic data points to identify early warning signs of insolvency.",
+
+    problem:
+      "Businesses and investors lack automated, reliable methods to anticipate financial distress, often relying on laggy indicators that don't provide sufficient warning.",
+
+    approach:
+      "Engineered features from longitudinal financial data and trained multiple classification models (Random Forest, XGBoost) to optimize for both recall and precision. Focused on handling class imbalance and improving model interpretability.",
+
+    features: [
+      "Financial risk assessment",
+      "Early warning bankruptcy indicators",
+      "Model transparency and feature importance",
+      "Comparison between multiple ML architectures"
+    ],
+
+    architecture:
+      "Data ingestion → Feature Engineering → Model Training (XGBoost) → Threshold Optimization. Designed for integration into broader financial risk management platforms.",
+
+    impact:
+      "Achieved high accuracy in identifying high-risk companies, demonstrating the potential for AI in stabilizing financial decision-making. Highlighted skills in data science and risk modeling.",
+
+    tags: ["Machine Learning", "Python", "Data Science"],
+    roles: ["Data Scientist"],
+    timeline: "Feb 2026",
+    github: "https://github.com/Adii-tii/bankruptcy-prediction",
+    live: "#",
+    ...getProjectImages("bankruptcy-prediction"),
   }
 ];

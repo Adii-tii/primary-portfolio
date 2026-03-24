@@ -25,6 +25,18 @@ const Certificates = () => {
       issuer: "iamneo",
       date: "Sep’ 24",
       link: "#"
+    },
+    {
+      title: "Java Programming",
+      issuer: "Oracle / Coursera",
+      date: "Aug’ 24",
+      link: "#"
+    },
+    {
+      title: "Computer Networks",
+      issuer: "Cisco / NPTEL",
+      date: "Jul’ 24",
+      link: "#"
     }
   ];
 
