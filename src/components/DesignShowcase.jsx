@@ -224,7 +224,7 @@ const DesignShowcase = () => {
       {/* BEHANCE CTA BUTTON */}
       <div className="text-center md:mt-10 relative z-10">
         <a
-          href="https://www.behance.net/"
+          href="https://www.behance.net/aditisable"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-4 rounded-full border-2 border-[#1E1E1E] bg-[#1E1E1E] text-[#FFFFEB] font-bold text-base transition-all duration-300 hover:-translate-y-1 hover:shadow-[4px_4px_0px_#1E1E1E]"

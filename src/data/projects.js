@@ -85,7 +85,7 @@ export const projectsData = [
   tags: ["React", "State Management", "Data Visualization"],
   roles: ["Full Stack Developer"],
   timeline: "Nov 2025",
-  github: "https://github.com/Adii-tii/expense-tracker",
+  github: "https://github.com/Adii-tii/expense-client",
   live: "https://expense-tracker-modern.vercel.app",
   ...getProjectImages("expense-tracker"),
 },
@@ -186,9 +186,9 @@ export const projectsData = [
 
     tags: ["D3.js", "GitHub API", "Data"],
     roles: ["Software Engineer"],
-    timeline: "Jul 2025",
-    github: "https://github.com/Adii-tii/pr-velocity-tracker",
-    live: "https://pr-tracker-insights.vercel.app",
+    timeline: "Since Jan'26",
+    github: "https://github.com/Adii-tii/pr-tracker-client",
+    live: "https://pr-tracker-client.vercel.app/",
     ...getProjectImages("pr-tracker"),
   },
 
@@ -221,8 +221,7 @@ export const projectsData = [
     tags: ["Computer Vision", "AI", "Python"],
     roles: ["Machine Learning Engineer"],
     timeline: "Mar 2025",
-    github: "https://github.com/Adii-tii/sign-language-ai",
-    live: "https://gesture-vision.vercel.app",
+    github: "https://github.com/Adii-tii/sign_language_recognition",
     ...getProjectImages("sign-lang"),
   },
   {

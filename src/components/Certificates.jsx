@@ -6,25 +6,25 @@ const Certificates = () => {
       title: "Full-stack Development with MERN Stack",
       issuer: "Cipher Schools",
       date: "May’ 25",
-      link: "#"
+      link: "https://drive.google.com/file/d/10z5GeUbbLrJ8UTV-nw-sRPxIu1Y7rz4w/view"
     },
     {
       title: "Affective Computing",
       issuer: "IIIT Delhi, NPTEL",
       date: "Apr’ 25",
-      link: "#"
+      link: "https://drive.google.com/file/d/1gl8oNtsFko7BDPnWdTwXnsov4Stybrso/view"
     },
     {
       title: "Data Analysis with Python",
       issuer: "IBM, Coursera",
       date: "Feb’ 25",
-      link: "#"
+      link: "https://drive.google.com/file/d/18wAizi4swH1Bez3XXReETo4Bl6XHaLAm/view"
     },
     {
       title: "Data Structures and Algorithms",
       issuer: "iamneo",
       date: "Sep’ 24",
-      link: "#"
+      link: "https://drive.google.com/file/d/1V-QM4atM7-SyhIYi8nvVcqWk3B6LuUts/view"
     },
     {
       title: "Java Programming",
